@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Asteroids</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="MyGame.game.initialize();" background="assets/mainBackground.jpg">
+
+	<div id="game">
+		<div id="mainmenu" class="screen">
+			<div class="title">Asteroids</div>
+			<div id="play-main" class="clickable">Play</div>
+			<div id="highscores-main" class="clickable">HighScores</div>
+			<div id="about-main" class="clickable">About</div>
+			<div id="help-main" class="clickable">Help</div>
+		</div>
+		<div id="maingame" class="screen">
+			<canvas id="gameCanvas" width="600px" height="600px"></canvas><!--will need to figure out how to adjust width and height-->
+		</div>
+		<div id="highscore" class="screen">
+			<div class="title">Asteroids</div>
+			<div class="title">HighScores:</div>
+			<div id="highscore-container">
+				<div id="hs_one">1000</div>
+				<div id="hs_two">900</div>
+				<div id="hs_three">800</div>
+				<div id="hs_four">700</div>
+				<div id="hs_five">600</div>
+			</div>
+			<div id="highscores-back-clickable" class="clickable">Back</div>
+		</div>
+		<div id="about" class="screen">
+			<div class="title">Asteroids</div>
+			<h4>Developed by</h2>
+			<h4>Stanford Cline</h4>
+			<h4>Spring 2019</h4>
+			<h4>CS5410</h4>
+			<div id="about-back-clickable" class="clickable">Back</div>
+		</div>
+		<div id="help" class="screen">
+			<div class="title">Asteroids</div>
+			<h4>Space: FIRE!</h4>
+			<h4>left/Right: turn</h4>
+			<h4>up: thrust</h4>
+			<h4>Z: hyperspace</h4>
+			<div id="help-back-clickable" class="clickable">Back</div>
+		</div>
+	</div>
+
+	<script>
+		let MyGame = {
+			screens: {},
+			input: {},
+			objects: {},
+			graphics: {},
+			renderer: {},
+			utils: {},
+			particles: {}
+		}
+	</script>
+
+	<script type="text/javascript" src="scripts/input/keyboard.js"></script>
+	<script type="text/javascript" src="scripts/utils/random.js"></script>
+	<script type="text/javascript" src="scripts/render/graphics.js"></script>
+	<script type="text/javascript" src="scripts/render/particlesSystemRenderer.js"></script>
+	<script type="text/javascript" src="scripts/render/particles.js"></script>
+	<script type="text/javascript" src="scripts/render/hyperBar.js"></script>
+	<script type="text/javascript" src="scripts/render/livesManager.js"></script>
+	<script type="text/javascript" src="scripts/render/animatedSpriteRenderer.js"></script>
+	<script type="text/javascript" src="scripts/render/ufoRenderer.js"></script>
+	<script type="text/javascript" src="scripts/render/asteroidRenderer.js"></script>
+	<script type="text/javascript" src="scripts/render/ufoBulletRenderer.js"></script>
+	<script type="text/javascript" src="scripts/render/text.js"></script>
+	<script type="text/javascript" src="scripts/objects/particleSystems.js"></script>
+	<script type="text/javascript" src="scripts/objects/asteroid.js"></script>
+	<script type="text/javascript" src="scripts/objects/ufoBullet.js"></script>
+	<script type="text/javascript" src="scripts/objects/livesManager.js"></script>
+	<script type="text/javascript" src="scripts/objects/hyperBar.js"></script>
+	<script type="text/javascript" src="scripts/objects/text.js"></script>
+	<script type="text/javascript" src="scripts/objects/animatedSprite.js"></script>
+	<script type="text/javascript" src="scripts/objects/ufo.js"></script>
+	<script type="text/javascript" src="scripts/objects/orb.js"></script>
+	<script type="text/javascript" src="scripts/sounds/sounds.js"></script>
+	<script type="text/javascript" src="scripts/game.js"></script>
+	<script type="text/javascript" src="scripts/persistence/persistence.js"></script>
+	<script type="text/javascript" src="scripts/screens/mainmenu.js"></script>
+	<script type="text/javascript" src="scripts/screens/about.js"></script>
+	<script type="text/javascript" src="scripts/screens/help.js"></script>
+	<script type="text/javascript" src="scripts/screens/highscores.js"></script>
+	<script type="text/javascript" src="scripts/screens/gameplay.js"></script>
+
+</body>
+</html>

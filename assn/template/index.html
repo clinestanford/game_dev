@@ -1,0 +1,70 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template</title>
+	<link rel="shortcut icon" href="#">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<script src="/node_modules/socket.io-client/dist/socket.io.slim.js"></script>
+</head>
+<body>
+
+	<!--<body onload="MyGame.main.initialize()">
+	-->
+
+	<div id="mainContainer" >
+		<div id="mainmenu" class="screen">
+			<div id="innerMainMenu">
+				<div id="buttonPlay" class="clickable">Play</div>
+				<div id="buttonAbout" class="clickable">About</div>
+				<div id="buttonHighs" class="clickable">Highscores</div>
+				<div id="buttonHelp" class="clickable">Control Options</div>
+			</div>
+		</div>
+		<div id="gameplay" class="screen">
+			<canvas id="game" width="1000px" height="600px"></canvas>
+		</div>
+		<div id="about" class="screen">
+			<div id="aboutButton" class="clickable">Back</div>
+			<div class="title">Created by: Stanford Cline</div>
+
+		</div>
+		<div id="highscores" class="screen">
+			<div id="highscoresButton" class="clickable">Back</div>
+			<div class="title">Highscores</div>
+			<div id="highscore-container">
+				<div id="hs_one">0</div>
+				<div id="hs_two">0</div>
+				<div id="hs_three">0</div>
+				<div id="hs_four">0</div>
+				<div id="hs_five">0</div>
+			</div>
+		</div>
+		<div id="help" class="screen">
+			<div id="helpButton" class="clickable">Back</div>
+			<div class="title">Controls</div>
+			<div class="title">Select the action for which you would like to change the control</div>
+			<div class="clickable getInput">hyperspace</div>
+			<div id="inputhyperspace"></div>
+			<div class="clickable getInput">thrust</div>
+			<div id="inputthrust"></div>
+			<div class="clickable getInput">rotateLeft</div>
+			<div id="inputrotateLeft"></div>
+			<div class="clickable getInput">rotateRight</div>
+			<div id="inputrotateRight"></div>
+			<div class="clickable getInput">fire</div>
+			<div id="inputfire"></div>
+		</div>
+		
+	</div>
+
+
+	<!-- <script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/screens/screen.js"></script>
+	<script type="text/javascript" src="scripts/screens/gameplay.js"></script> -->
+	
+	<script data-main="scripts/client/loader" src="scripts/client/require.js"></script>
+
+</body>
+</html>

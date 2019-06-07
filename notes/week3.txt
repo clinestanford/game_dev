@@ -1,0 +1,26 @@
+
+
+
+canvas
+	canvas = document.getElementById("id-canvas");
+	context = canvas.getContext('2d');
+
+	CanvasRenderingContext2D.prototype.clear = function() {
+		this.clearRect(0, 0, canvas.width, canvas.height);
+	}
+
+	context.clear();
+
+Draw a Rectangle:
+	uses a command buffer so that there isn't any flickering for the rendering
+
+
+	set rendering style:
+		color, outline width, 
+
+	context.strokeStyle = 'rgba(0,0,255,1)';
+	context.lineWidth = 2;
+	context.strokeRect(top left, top right, width, height);
+
+Draw a Polygon:
+	must define a path (similar to turtle graphics)

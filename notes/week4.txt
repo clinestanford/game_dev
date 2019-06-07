@@ -1,0 +1,31 @@
+   _                                _       _   
+  (_) __ ___   ____ _ ___  ___ _ __(_)_ __ | |_ 
+  | |/ _` \ \ / / _` / __|/ __| '__| | '_ \| __|
+  | | (_| |\ V / (_| \__ \ (__| |  | | |_) | |_ 
+ _/ |\__,_| \_/ \__,_|___/\___|_|  |_| .__/ \__|
+|__/                                 |_|        
+                               
+  ___ __ _ _ ____   ____ _ ___ 
+ / __/ _` | '_ \ \ / / _` / __|
+| (_| (_| | | | \ V / (_| \__ \
+ \___\__,_|_| |_|\_/ \__,_|___/
+                               
+##### note, associated code is in canvas.js #####
+
+the boolean trap, google it, learn it
+
+closure: 
+	myFerrari refers to return object,
+	object refers to function,
+	function refers to input parameters (what we gave it when we created the instance of myFerrari)
+		in essence, spec becomes private fields
+		can use a lot of memory if not careful
+
+Rendering a Texture to Canvas (an image (.png, .jpg)):
+	1. define geometry, center, width, height
+	2. create image object
+	3. Load the image:
+		will load the image asynchronously
+	4. Render the texture:
+		Translate, Rotate, Translate, Draw
+

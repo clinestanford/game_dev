@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload="MyGame.game.initialize();">
+
+
+	<div id="game">
+		<div id="mainmenu" class="screen">
+			<div class="title">Asteroids</div>
+			<div id="play-main" class="clickable">Play</div>
+			<div id="highscores-main" class="clickable">HighScores</div>
+			<div id="about-main" class="clickable">About</div>
+			<div id="help-main" class="clickable">Help</div>
+		</div>
+		<div id="maingame" class="screen active">
+			<canvas id="gameCanvas"></canvas>
+		</div>
+		<div id="highscore" class="screen">
+			<div class="title">Asteroids</div>
+			<div class="title">HighScores:</div>
+			<div id="highscore-container">
+				<div id="hs_one">1000</div>
+				<div id="hs_two">900</div>
+				<div id="hs_three">800</div>
+				<div id="hs_four">700</div>
+				<div id="hs_five">600</div>
+			</div>
+			<div id="highscores-back-clickable" class="clickable">Back</div>
+		</div>
+		<div id="about" class="screen">
+			<div class="title">Asteroids</div>
+			<h4>Developed by</h2>
+			<h4>Stanford Cline</h4>
+			<h4>Spring 2019</h4>
+			<h4>CS5410</h4>
+			<div id="about-back-clickable" class="clickable">Back</div>
+		</div>
+		<div id="help" class="screen">
+			<div class="title">Asteroids</div>
+			<div id="help-back-clickable" class="clickable">Back</div>
+		</div>
+	</div>
+
+	<script>
+		MyGame = {
+
+		}
+	</script>
+
+	<script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

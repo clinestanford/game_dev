@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Loop</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body onload="initialize()">
+	<div class="main">
+		<!--This will contain the Browser game Loop -->
+		<div class="boxHeader">Browser Game Loop</div>
+		<!--This will contain the two inner boxes -->
+		<div class="boxMain">
+			<div class="left" id="printTo">Some Info</div>
+			<div class="right">
+				<table>
+					<tr>
+						<td>
+							Name: 
+						</td>
+						<td>
+							<input type="text" name="Name" id="inputName">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							Interval (ms): 
+						</td>
+						<td>
+							<input type="text" name="interval" id="inputInterval">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							# Times: 
+						</td>
+						<td>
+							<input type="text" name="times" id="inputTimes">
+						</td>
+					</tr>
+				</table>
+				<div class="buttonAttempt" onclick="addEvent()">
+					Add Event
+				</div>
+			</div>
+		</div>
+		<!--This will contain-->
+		<div class="boxFooter">Created by Stanford Cline</div>
+	</div>
+
+</body>
+</html>

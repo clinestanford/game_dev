@@ -1,0 +1,53 @@
+
+
+Resources Management
+	system responsible for manipulation of content/assets
+	game developers will typically write their own memory management software
+	Object/Memory Pool:
+		pre-allocate a bunch of objects you know that you are going to use.
+		since it already exists, doesn't need to make a system call to allocate more memory.
+		once used, it is marked as unused so that it can be used elsewhere
+	responsible for:
+		textures, models, animations, geometry, sounds, strings
+Rendering:
+	this is what draws things to the screen
+	game systems will typically use an interface, and will not talk to the low-level APIs (OpenGL-PS4/Nintendo?, DirectX-Microsoft, Vulkan, Metal-Apple)
+		low-level apis cannot render fonts
+	Hierarchy of the game:
+		Gameplay code
+		Game engine
+		High-Level API (for the game)
+		Low-Level API (for the game)
+		Abstraction Layer
+		Low-level API (OpenGL)
+		GPU
+	types:
+		2D Rendering, 3D Rendering, camera model (position, depth of field), animation, particles, offline everything (will render offline to speed real-time), HUD (heads-up-display)
+	audio:
+		again interface/abstratction for low-level API
+	input:
+		keyboard, mouse (with motion smoothing), controllers, sound (voice recognition), video (kinect)
+Networking:
+	multiplayer:
+		p2p
+		client/server
+		MMO 
+	issues/technical:
+		tcp/ip - tcp or udp
+			udp: very fast, but not necessarily same order
+			tcp: guarantees deliver and order, slightly slower
+		Bandwidth:
+			the amount of data you can send (the size of the hose)
+		Latency:
+			round trip time
+		Packet Loss:
+			affects game types and experience of players
+		Synchronization:
+			maintain a consistent world state across all players
+Physics
+	Used to describe the movement of objects in the game (matter.js is a javascript library for physics)
+Scripting
+	Loosen coupling between the gameplay and the core game services
+	You can make your c++ code scriptable for use in JavaScript, Python, Lua(built for this purpose)
+Artificial Intelligence
+	collection of techniques used to produce the illusion of intelligent behavior in non-player controlled game characters 

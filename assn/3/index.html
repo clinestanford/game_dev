@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maze</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="header">
+		<h1>But Where is the Cheese?</h1>
+	</div>
+	<div class="main-square">
+		<div class="left">
+			<h2>time: </h2><h2 id="showTime">0</h2>
+			<div>
+				<div>
+					<input type="radio" id="fivexfive"
+					 name="size" value="five">
+					<label for="fivexfive">5X5</label>
+				</div>
+				<div>
+					<input type="radio" id="tenxten"
+					 name="size" value="ten">
+					<label for="tenxten">10X10</label>
+				</div>
+				<div>
+					<input type="radio" id="fifteenxfifteen"
+					 name="size" value="fifteen">
+					<label for="fifteenxfifteen">15X15</label>
+				</div>
+				<div>
+					<input type="radio" id="twentyxtwenty"
+					 name="size" value="twenty">
+					<label for="twentyxtwenty">20X20</label>
+				</div>
+			
+			</div>
+			<div>
+				<div class="buttonAttempt" id="startButton">Create Maze</div>
+			</div>
+			<div>
+				<h2>Cheats:</h2>
+				<h2>P: show path</h2>
+				<h2>H: show hight</h2>
+				<h2>B: show past</h2>
+			</div>
+		</div>
+		<div class="middle">
+			<canvas id="my-canvas" width="600px" height="600px"></canvas>
+		</div>
+		<div class="right">
+			<h2>score: </h2><h2 id="showScore">0</h2>
+			<h2>HighScores:</h2>
+			<div class="hs"><h2 id="one"></h2></div>
+			<div class="hs"><h2 id="two"></h2></div>
+			<div class="hs"><h2 id="three"></h2></div>
+			<div class="hs"><h2 id="four"></h2></div>
+			<div class="hs"><h2 id="five"></h2></div>
+
+			<div class="bottom">
+				<h2>dev credit:</h2>
+				<h2>Stanford Cline</h2>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+
+	<script>
+		let MyGame = {
+			objects: {},
+			render: {},
+			input: {}
+		}
+	</script>
+
+	<script type="text/javascript" src="scripts/graphics.js"></script>
+	<script type="text/javascript" src="scripts/objects/maze.js"></script>
+	<script type="text/javascript" src="scripts/objects/sprite.js"></script>
+	<script type="text/javascript" src="scripts/objects/texture.js"></script>
+	<script type="text/javascript" src="scripts/render/maze.js"></script>
+	<script type="text/javascript" src="scripts/render/sprite.js"></script>
+	<script type="text/javascript" src="scripts/render/texture.js"></script>
+	<script type="text/javascript" src="scripts/keyboard.js"></script>
+	<script type="text/javascript" src="scripts/game.js"></script>
+
+</body>
+</html>

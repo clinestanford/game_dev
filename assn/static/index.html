@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>template</title>
+	<link rel="shortcut icon" href="#">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+</head>
+
+<body onload="MyGame.main.initialize()">
+
+	<div id="mainContainer" >
+		<div id="mainmenu" class="screen">
+			<div id="innerMainMenu">
+				<div id="buttonPlay" class="clickable">Play</div>
+				<div id="buttonAbout" class="clickable">About</div>
+				<div id="buttonHighs" class="clickable">Highscores</div>
+				<div id="buttonHelp" class="clickable">Help</div>
+			</div>
+		</div>
+		<div id="gameplay" class="screen">
+			<canvas id="game" width="1000px" height="600px"></canvas>
+		</div>
+		<div id="about" class="screen">
+			<div id="aboutButton" class="clickable">Back</div>
+		</div>
+		<div id="highscores" class="screen">
+			<div id="highscoresButton" class="clickable">Back</div>
+			<div class="title">Highscores</div>
+			<div id="highscore-container">
+				<div id="hs_one">1000</div>
+				<div id="hs_two">900</div>
+				<div id="hs_three">800</div>
+				<div id="hs_four">700</div>
+				<div id="hs_five">600</div>
+			</div>
+		</div>
+		<div id="help" class="screen">
+			<div id="helpButton" class="clickable">Back</div>
+		</div>
+		
+	</div>
+
+	<script>
+		let MyGame = {
+			screens: {},
+			assets: {},
+			input: {},
+			objects: {},
+			renderer: {}
+		}
+
+	</script>
+
+	<script type="text/javascript" src="scripts/random.js"></script>
+	<script type="text/javascript" src="scripts/renderer/graphics.js"></script>
+	<script type="text/javascript" src="scripts/renderer/text.js"></script>
+	<script type="text/javascript" src="scripts/renderer/lunarLanderRenderer.js"></script>
+	<script type="text/javascript" src="scripts/objects/text.js"></script>
+	<script type="text/javascript" src="scripts/objects/particleSystem.js"></script>
+	<script type="text/javascript" src="scripts/objects/lunarLander.js"></script>
+	<script type="text/javascript" src="scripts/objects/surface.js"></script>
+	<script type="text/javascript" src="scripts/persistence/persistence.js"></script>
+	<script type="text/javascript" src="scripts/input/keyboard.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
+	<script type="text/javascript" src="scripts/screens/screen.js"></script>
+	<script type="text/javascript" src="scripts/screens/gameplay.js"></script>
+	
+</body>
+</html>
